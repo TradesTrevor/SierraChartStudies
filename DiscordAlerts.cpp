@@ -80,7 +80,7 @@ SCSFExport scsf_DiscordTradeAlert(SCStudyInterfaceRef sc) {
     float currentQuantity = position.PositionQuantity;
 
     int& PriorOrderFillEntrySize = sc.GetPersistentInt(1);
-    int& LastPositionDirection = sc.GetPersistentInt(2); // 0 for flat, 1 for long, -1 for short
+    int& LastPositionDirection = sc.GetPersistentInt(2);
 
     int CurrentOrderFillEntrySize = sc.GetOrderFillArraySize();
 
